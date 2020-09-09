@@ -1,0 +1,572 @@
+{% load static %}
+
+<html lang="en">
+	<head>
+
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-script-type" content="text/javascript" />
+		<meta http-equiv="content-style-type" content="text/css" />
+		<meta http-equiv="content-language" content="nl" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Ryann Christopher C. Ang- Web Developer - Interactive Resume</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
+		<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+		<link href="{% static 'css/style.css' %}" rel="stylesheet" />
+
+		<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+		<link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+
+		<!--[if lt IE 9]>
+			<script src="{% static 'js/html5shiv.js' %}"></script>
+			<script src="{% static  'js/respond.min.js' %}"></script>
+		<![endif]-->
+
+		<!-- Begin Inspectlet Embed Code -->
+		<script type="text/javascript" id="inspectletjs">
+			window.__insp = window.__insp || [];
+			__insp.push(['wid', 92785244]);
+			(function() {
+				function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://www.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+				if (window.attachEvent){
+					window.attachEvent('onload', __ldinsp);
+				}else{
+					window.addEventListener('load', __ldinsp, false);
+				}
+			})();
+		</script>
+		<!-- End Inspectlet Embed Code -->
+	</head>
+	<body data-spy="scroll" data-target="#navbar-example">
+
+		<div id="top" class="jumbotron" data-src="<?= $current_header['source']; ?>" data-position="<?= $current_header['position']; ?>">
+			<div class="container">
+				<h1>Ryann Christopher C. Ang</h1>
+				<p class="lead">Interactive resume</p>
+			</div>
+
+			<div class="overlay"></div>
+
+			<a href="#profile" class="scroll-down">
+				<span class="glyphicon glyphicon-chevron-down"></span>
+			</a>
+		</div>
+
+		<nav class="navbar navbar-default" id="navbar-example" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#profile">Profile</a></li>
+					<li><a href="#experiences">Experiences</a></li>
+					<li><a href="#abilities">Abilities</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+
+		<div class="background-white">
+			<div id="profile" class="container">
+				<h2>Profile</h2>
+				<p class="lead">I&#039;m a creative Django web developer / Data Scientist</p>
+
+				<hr />
+				<div class="row">
+					<div class="col-md-4">
+						<h3>About me</h3>
+						<p>
+							I'm Ryann Christopher C. Ang, a ninja web developer / creative programmer with good knowledge of back end web techniques and artificial intelligence.
+						</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<img src="{%static 'images/ryann_ang.png' %}" alt="Ryann Christopher C. Ang" width="246" height="246" />
+					</div>
+					<div class="col-md-4">
+						<h3>Details</h3>
+						<p>
+							<strong>Name:</strong> Ryann Christopher C. Ang<br />
+							<strong>Age:</strong> 23<br />
+							<strong>Location:</strong> Manila, Philippines<br/>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="experiences" class="container">
+			<h2>Experiences</h2>
+			<p class="lead">
+				&ldquo;Protons give an atom its identity, electrons its personality.&rdquo;<br />- Bill Bryson, A short history of nearly everything
+			</p>
+
+			<hr />
+
+			<h3>Educations</h3>
+			<div class="experiences">
+
+				<div class="experience row">
+					<div class="col-md-4">
+						<h4>Technological Institute of the Philippines - Manila</h4>
+						<p class="experience-period">
+							June 2014 - May 2019
+						</p>
+					</div>
+					<div class="col-md-8">
+						<p>
+							<strong>Bachelor of Science in Electronics and Communications Engineering</strong>
+							<span class="hidden-phone">
+								A five-year degree program which aims to produce certified electronics engineers who can conceptualize, design, and implement innovative electronic, computer, and communication systems, devices, goods, services, and processes.
+							</span>
+							<span class="experience-details">
+								<span class="location">
+									<span class="glyphicon glyphicon-map-marker"></span>
+									Quiapo,Manila
+								</span>
+							</span>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<hr />
+
+			<h3>Careers</h3>
+			<div class="experiences">
+
+				<div class="experience row">
+					<div class="col-md-4">
+						<h4>Adventra Inc.</h4>
+						<p class="experience-period">
+							December 2019 - current
+						</p>
+					</div>
+					<div class="col-md-8">
+						<p>
+							<strong>Backend-Web Developer</strong>
+							<span class="hidden-phone">
+								Developed and used a web-scraping API that will be used in data acquisition of the app. Coded and test the whole back-end web server.
+								Designed and implemented the MySQL Database that would be the core of the app. Wrote products specs to work with developers and designers on the development of the product.
+							</span>
+							<span class="experience-details">
+								<span class="location">
+									<span class="glyphicon glyphicon-map-marker"></span>
+									Makati, Philippines
+								</span>
+							</span>
+
+						</p>
+					</div>
+
+					<div class="col-md-4">
+						<h4>Uplift Microfinance Inc.</h4>
+						<p class="experience-period">
+							May 2018 - May 2019
+						</p>
+					</div>
+					<div class="col-md-8">
+						<p>
+							<strong>Full Stack Web Developer</strong>
+							<span class="hidden-phone">
+								Designed and developed the full front end and backend of an article type website. Used and implemented different api like Google API and Wordpress API.
+							</span>
+							<span class="experience-details">
+								<span class="location">
+									<span class="glyphicon glyphicon-map-marker"></span>
+									Manila, Philippines
+								</span>
+								<span class="seperator">|</span>
+								<span class="link">
+									<span class="glyphicon glyphicon-link"></span>
+									<a href="http://uplift.org.ph" target="_blank"> http://uplift.org.ph</a>
+								</span>
+							</span>
+						</p>
+					</div>
+
+					<div class="col-md-4">
+						<h4>Microtech96 Inc.</h4>
+						<p class="experience-period">
+							Nov 2017 - May 2018
+						</p>
+					</div>
+					<div class="col-md-8">
+						<p>
+							<strong>Software Developer/ Data Scientist</strong>
+							<span class="hidden-phone">
+								Designed and automated electronic devices with the implementation of machine learning algorithms. Designed and developed products using C++, Matlab and Python Programming.
+								Implemented multiple iterations of the prototype and presented them to potential customers.
+							</span>
+							<span class="experience-details">
+								<span class="location">
+									<span class="glyphicon glyphicon-map-marker"></span>
+									Manila, Philippines
+								</span>
+							</span>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="background-white">
+			<div id="abilities" class="container">
+				<h2>Abilities</h2>
+				<p class="lead">
+					&ldquo;Life without knowledge is death in disguise.&rdquo;<br />- Talib Kweli
+				</p>
+
+				<hr />
+
+				<h3>Skills</h3>
+
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="no-bullets">
+							<li>
+								<span class="ability-title">Python</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">Electronics</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">Django</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">Matlab</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">Object Oriented Programming</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">JSON/XML</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">HTML/Javascript/CSS</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">JQuery</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul class="no-bullets">
+							<li>
+								<span class="ability-title">C++</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">Linux</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">BASIC</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">SQL</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">Machine Learning</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">Artificial Intelligence</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">Photoshop</span>
+								<span class="ability-score">
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star filled"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="text-center project-referal">
+					<p>This project is build on a custom made PHP framework.</p>
+					<a href="https://github.com/rynnchrs/personalWebsite" class="btn btn-primary" target="_blank">See project on Github</a>
+				</div>
+
+				<hr />
+
+				<h3>Languages</h3>
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="no-bullets">
+							<li>
+								<span class="ability-title">English</span>
+								<span class="ability-score">
+										<span class="glyphicon glyphicon-star filled"></span>
+										<span class="glyphicon glyphicon-star filled"></span>
+										<span class="glyphicon glyphicon-star filled"></span>
+										<span class="glyphicon glyphicon-star filled"></span>
+										<span class="glyphicon glyphicon-star"></span>
+								</span>
+							</li>
+							<li>
+								<span class="ability-title">Filipino</span>
+								<span class="ability-score">
+										<span class="glyphicon glyphicon-star filled"></span>
+										<span class="glyphicon glyphicon-star filled"></span>
+										<span class="glyphicon glyphicon-star filled"></span>
+										<span class="glyphicon glyphicon-star filled"></span>
+										<span class="glyphicon glyphicon-star filled"></span>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="projects" class="container">
+			<h2>Projects</h2>
+			<p class="lead">
+				&ldquo;You can do anything you set your mind to.&rdquo;<br />- Benjamin Franklin
+			</p>
+
+			<hr />
+
+			<div class="row">
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<figure class="effect">
+						<img src="{%static 'images/project_mals.jpg' %}"/>
+
+						<figcaption>
+							<h3>Mals</h3>
+							<p>Mals, a creative agency located in Rotterdam</p>
+							<p><strong>Tags:</strong>Development,Wordpress,Bootstrap</p>
+							<a href="https://www.studiomals.com/" target="_blank"></a>
+							<span class="icon">
+								<span class="glyphicon glyphicon-new-window"></span>
+							</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<figure class="effect">
+						<img src="{%static 'images/project_soap.jpg' %}"/>
+
+						<figcaption>
+							<h3>SOAP</h3>
+							<p>Build the website of a barbershop</p>
+							<p><strong>Tags:</strong>Design,Development,Wordpress,Bootstrap</p>
+							<a href="http://soaphair.nl/" target="_blank"></a>
+							<span class="icon">
+								<span class="glyphicon glyphicon-new-window"></span>
+							</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<figure class="effect">
+						<img src="{%static 'images/project_uplift.png' %}"/>
+
+						<figcaption>
+							<h3>UPLiFT</h3>
+							<p>Build the website of a national microfinance company</p>
+							<p><strong>Tags:</strong>Design,Development,Wordpress,Bootstrap</p>
+							<a href="http://uplift.org.ph" target="_blank"></a>
+							<span class="icon">
+								<span class="glyphicon glyphicon-new-window"></span>
+							</span>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<figure class="effect">
+						<img src="{%static 'images/project_coffee.png' %}"/>
+
+						<figcaption>
+							<h3>Coffee Recognition</h3>
+							<p>Build the website and coffee image recognition of a local coffee farm</p>
+							<p><strong>Tags:</strong>Design,Django,Bootstrap,Artificial Intelligence,Image Processing, Tensorflow</p>
+							<a href="http://coffeedef.pythonanywhere.com" target="_blank"></a>
+							<span class="icon">
+								<span class="glyphicon glyphicon-new-window"></span>
+							</span>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<div class="background-gray">
+			<div id="contact" class="container">
+				<h2>Contact</h2>
+				<p class="lead">
+					&ldquo;If I had asked people what they wanted, they would have said faster horses. &rdquo;<br />- Henry Ford
+				</p>
+
+				<hr />
+
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="no-bullets">
+							<li>
+								<a href="https://twitter.com/rynnchrs" target="_blank">
+									<span class="icon icon-twitter"></span>
+									https://twitter.com/rynnchrs
+								</a>
+							</li>
+							<li>
+								<a href="https://linkedin.com/in/ryann-ang-7064a4164" target="_blank">
+									<span class="icon icon-linkedin"></span>
+									https://linkedin.com/in/ryann-ang-7064a4164
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul class="no-bullets">
+							<li>
+								<a href="https://web.facebook.com/ryannchris.ang03" target="_blank">
+									<span class="icon icon-facebook"></span>
+									https://web.facebook.com/ryannchris.ang03
+								</a>
+							</li>
+							<li>
+								<span class="icon icon-email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rchris.ang@gmail.com</span>
+								<span style="unicode-bidi:bidi-override; direction: rtl;">
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-3361587-8']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</body>
+</html>
